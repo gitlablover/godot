@@ -1,0 +1,740 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://checker_board.gd" type="Script" id=1]
+[ext_resource path="res://checker_cell/checker_cell.tscn" type="PackedScene" id=2]
+[ext_resource path="res://checker_cell/new_buttongroup.tres" type="ButtonGroup" id=4]
+
+[node name="CheckerBoard" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 36.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 793.0
+margin_bottom = 629.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 786.0
+margin_bottom = 20.0
+
+[node name="Save" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_right = 41.0
+margin_bottom = 20.0
+text = "Save"
+
+[node name="Load" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 45.0
+margin_right = 87.0
+margin_bottom = 20.0
+text = "Load"
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer"]
+margin_left = 91.0
+margin_right = 95.0
+margin_bottom = 20.0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_left = 99.0
+margin_top = 3.0
+margin_right = 123.0
+margin_bottom = 17.0
+text = "FEN"
+
+[node name="Mybtn" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 127.0
+margin_right = 179.0
+margin_bottom = 20.0
+text = "Mybtn"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 786.0
+margin_bottom = 28.0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+margin_top = 32.0
+margin_right = 786.0
+margin_bottom = 402.0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 779.0
+margin_bottom = 363.0
+columns = 9
+
+[node name="CheckerCell" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_right = 32.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell2" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell3" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell4" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell5" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_right = 176.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell6" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_right = 212.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell7" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_right = 248.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell8" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_right = 284.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell9" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_right = 320.0
+margin_bottom = 32.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell10" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 36.0
+margin_right = 32.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell11" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 36.0
+margin_right = 68.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell12" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 36.0
+margin_right = 104.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell13" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 36.0
+margin_right = 140.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell14" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 36.0
+margin_right = 176.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell15" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 36.0
+margin_right = 212.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell16" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 36.0
+margin_right = 248.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell17" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 36.0
+margin_right = 284.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell18" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 36.0
+margin_right = 320.0
+margin_bottom = 68.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell19" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 72.0
+margin_right = 32.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell20" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 72.0
+margin_right = 68.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell21" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 72.0
+margin_right = 104.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell22" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 72.0
+margin_right = 140.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell23" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 72.0
+margin_right = 176.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell24" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 72.0
+margin_right = 212.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell25" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 72.0
+margin_right = 248.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell26" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 72.0
+margin_right = 284.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell27" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 72.0
+margin_right = 320.0
+margin_bottom = 104.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell28" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 108.0
+margin_right = 32.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell29" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 108.0
+margin_right = 68.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell30" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 108.0
+margin_right = 104.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell31" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 108.0
+margin_right = 140.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell32" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 108.0
+margin_right = 176.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell33" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 108.0
+margin_right = 212.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell34" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 108.0
+margin_right = 248.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell35" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 108.0
+margin_right = 284.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell36" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 108.0
+margin_right = 320.0
+margin_bottom = 140.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell37" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 144.0
+margin_right = 32.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell38" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 144.0
+margin_right = 68.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell39" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 144.0
+margin_right = 104.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell40" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 144.0
+margin_right = 140.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell41" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 144.0
+margin_right = 176.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell42" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 144.0
+margin_right = 212.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell43" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 144.0
+margin_right = 248.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell44" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 144.0
+margin_right = 284.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell45" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 144.0
+margin_right = 320.0
+margin_bottom = 176.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell82" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 180.0
+margin_right = 32.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell83" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 180.0
+margin_right = 68.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell84" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 180.0
+margin_right = 104.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell85" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 180.0
+margin_right = 140.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell86" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 180.0
+margin_right = 176.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell87" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 180.0
+margin_right = 212.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell88" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 180.0
+margin_right = 248.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell89" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 180.0
+margin_right = 284.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+text = "x"
+expand_icon = true
+
+[node name="CheckerCell90" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 180.0
+margin_right = 320.0
+margin_bottom = 212.0
+group = ExtResource( 4 )
+expand_icon = true
+
+[node name="CheckerCell46" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 216.0
+margin_right = 32.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+text = "p"
+
+[node name="CheckerCell47" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 216.0
+margin_right = 68.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell48" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 216.0
+margin_right = 104.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+text = "p"
+
+[node name="CheckerCell49" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 216.0
+margin_right = 140.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell50" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 216.0
+margin_right = 176.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+text = "p"
+
+[node name="CheckerCell51" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 216.0
+margin_right = 212.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell52" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 216.0
+margin_right = 248.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+text = "p"
+
+[node name="CheckerCell53" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 216.0
+margin_right = 284.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell54" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 216.0
+margin_right = 320.0
+margin_bottom = 248.0
+group = ExtResource( 4 )
+text = "p"
+
+[node name="CheckerCell55" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 252.0
+margin_right = 32.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell56" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 252.0
+margin_right = 68.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+text = "g"
+
+[node name="CheckerCell57" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 252.0
+margin_right = 104.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell58" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 252.0
+margin_right = 140.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell59" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 252.0
+margin_right = 176.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell60" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 252.0
+margin_right = 212.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell61" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 252.0
+margin_right = 248.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell62" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 252.0
+margin_right = 284.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+text = "g"
+
+[node name="CheckerCell63" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 252.0
+margin_right = 320.0
+margin_bottom = 284.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell64" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 288.0
+margin_right = 32.0
+margin_bottom = 320.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell65" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 288.0
+margin_right = 68.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( 32, 0 )
+group = ExtResource( 4 )
+
+[node name="CheckerCell66" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 288.0
+margin_right = 104.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( 32, 0 )
+group = ExtResource( 4 )
+
+[node name="CheckerCell67" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 288.0
+margin_right = 140.0
+margin_bottom = 320.0
+group = ExtResource( 4 )
+
+[node name="CheckerCell68" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 288.0
+margin_right = 176.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( -925, -144 )
+group = ExtResource( 4 )
+
+[node name="CheckerCell69" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 288.0
+margin_right = 212.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( -961, -144 )
+group = ExtResource( 4 )
+
+[node name="CheckerCell70" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 288.0
+margin_right = 248.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( -997, -144 )
+group = ExtResource( 4 )
+
+[node name="CheckerCell71" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 288.0
+margin_right = 284.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( -1033, -144 )
+group = ExtResource( 4 )
+
+[node name="CheckerCell72" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 288.0
+margin_right = 320.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( -1069, -144 )
+group = ExtResource( 4 )
+
+[node name="CheckerCell73" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_top = 324.0
+margin_right = 32.0
+margin_bottom = 356.0
+rect_pivot_offset = Vector2( -781, -180 )
+group = ExtResource( 4 )
+text = "r"
+
+[node name="CheckerCell74" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 324.0
+margin_right = 68.0
+margin_bottom = 356.0
+rect_pivot_offset = Vector2( -817, -180 )
+group = ExtResource( 4 )
+text = "n"
+
+[node name="CheckerCell75" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 72.0
+margin_top = 324.0
+margin_right = 104.0
+margin_bottom = 356.0
+rect_pivot_offset = Vector2( -853, -180 )
+group = ExtResource( 4 )
+text = "b"
+
+[node name="CheckerCell76" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 108.0
+margin_top = 324.0
+margin_right = 140.0
+margin_bottom = 356.0
+rect_pivot_offset = Vector2( -889, -180 )
+group = ExtResource( 4 )
+text = "q"
+
+[node name="CheckerCell77" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 144.0
+margin_top = 324.0
+margin_right = 176.0
+margin_bottom = 356.0
+group = ExtResource( 4 )
+text = "k"
+
+[node name="CheckerCell78" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 180.0
+margin_top = 324.0
+margin_right = 212.0
+margin_bottom = 356.0
+group = ExtResource( 4 )
+text = "q"
+
+[node name="CheckerCell79" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 216.0
+margin_top = 324.0
+margin_right = 248.0
+margin_bottom = 356.0
+group = ExtResource( 4 )
+text = "b"
+
+[node name="CheckerCell80" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 252.0
+margin_top = 324.0
+margin_right = 284.0
+margin_bottom = 356.0
+group = ExtResource( 4 )
+text = "n"
+
+[node name="CheckerCell81" parent="VBoxContainer/PanelContainer/GridContainer" instance=ExtResource( 2 )]
+margin_left = 288.0
+margin_top = 324.0
+margin_right = 320.0
+margin_bottom = 356.0
+group = ExtResource( 4 )
+text = "r"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Load" to="." method="_on_Load_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Mybtn" to="." method="_on_Mybtn_pressed"]
